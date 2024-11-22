@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+</head>
+
+<body>
+  <h1 class="visually-hidden">Simple Calculator</h1>
+  <main class="container">
+    <div class="wrapper">
+      <div class="calculator-header">
+        <button class="btn-reset btn-tool btn-tool--red" disabled></button>
+        <button class="btn-reset btn-tool btn-tool--yellow" disabled></button>
+        <button class="btn-reset btn-tool btn-tool--green"></button>
+      </div>
+      <div class="calculator-body">
+        <div class="output"></div>
+        <div class="input">0</div>
+
+        <div class="buttons-wrapper">
+          <div class="buttons-wrapper__left">
+            <div class="settings">
+              <button class="btn-reset btn" data-sign="AC">AC</button>
+              <button class="btn-reset btn" data-sign="reverse"><sup>+</sup>/-</button>
+              <button class="btn-reset btn" data-sign="%">%</button>
+            </div>
+            <div class="numbers">
+              <div class="row">
+                <button class="btn-reset btn" data-sign="7">7</button>
+                <button class="btn-reset btn" data-sign="8">8</button>
+                <button class="btn-reset btn" data-sign="9">9</button>
+              </div>
+              <div class="row">
+                <button class="btn-reset btn" data-sign="4">4</button>
+                <button class="btn-reset btn" data-sign="5">5</button>
+                <button class="btn-reset btn" data-sign="6">6</button>
+              </div>
+              <div class="row">
+                <button class="btn-reset btn" data-sign="1">1</button>
+                <button class="btn-reset btn" data-sign="2">2</button>
+                <button class="btn-reset btn" data-sign="3">3</button>
+              </div>
+              <div class="row">
+                <button class="btn-reset btn btn--zero" data-sign="0">0</button>
+                <button class="btn-reset btn" data-sign=".">.</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="buttons-wrapper__right">
+            <button class="btn-reset btn" data-sign="/">&#247;</button>
+            <button class="btn-reset btn" data-sign="*">&#215;</button>
+            <button class="btn-reset btn" data-sign="-">-</button>
+            <button class="btn-reset btn" data-sign="+">+</button>
+            <button class="btn-reset btn" data-sign="=">=</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
